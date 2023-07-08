@@ -1,0 +1,173 @@
+#container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    overflow: hidden;
+    z-index: -1;
+    background-color: lightblue;
+
+}
+
+#carro {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/player.png');
+    background-size: 100% 100%;
+
+}
+
+.obstaculo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+}
+
+.obstaculo1 {
+    background-image: url('../img/car03.png');
+    background-size: 100% 100%;
+    background-color: transparent;
+
+}
+
+.obstaculo2 {
+    background-image: url('../img/pngegg.png');
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+.obstaculo3 {
+    background-image: url('../img/obs.png');
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+.obstaculo4 {
+    background-image: url('../img/nitro.webp');
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+
+#pontuacao {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#barra-combustivel {
+    width: 100%;
+    height: 10px;
+    background-color: #f00;
+    margin-top: 10px;
+}
+
+#valor-pontuacao {
+    font-weight: bold;
+}
+
+.poligono {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+/*Menu do jogo*/
+#menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#menu #botao_de_iniciar,
+#menu #cenarios {
+    height: 200px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #0f8cf2;
+}
+
+#menu #botao_de_iniciar {
+    width: 20%;
+    margin: 0 0 15px 10px;
+}
+
+#menu #botao_de_iniciar #iniciar {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    background-color: #ffab3d;
+    cursor: pointer;
+}
+
+#menu #cenarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 20%;
+    margin: 0 10px 15px 0;
+}
+
+#menu #cenarios button {
+    width: 125px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #FFB73D;
+}
+
+/*Tela do final do jogo */
+#tela-final{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#tela-final h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#tela-final p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#tela-final button {
+    padding: 10px 20px;
+    font-size: 24px;
+}
